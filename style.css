@@ -1402,6 +1402,59 @@ button {
     height: 38px;
   }
 
+  /* Mobile hero fixes - prevents blob from being overlapped by navbar */
+  .spread {
+    min-height: 100vh;
+    height: auto;
+    padding-top: 80px;
+  }
+
+  .spread-grid {
+    padding: 20px 20px 100px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: calc(100vh - 80px);
+    height: auto;
+    gap: 20px;
+  }
+
+  .spread-blob {
+    width: clamp(160px, 50vw, 260px);
+    margin: 0 auto 20px;
+    flex-shrink: 0;
+  }
+
+  .spread-copy {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .spread-copy h1 {
+    font-size: clamp(28px, 8vw, 38px);
+    margin: 12px 0 14px;
+  }
+
+  .spread-copy p {
+    font-size: 15px;
+    margin: 0 auto 24px;
+    max-width: 100%;
+  }
+
+  .spread-controls {
+    padding: 0 20px 30px;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .scroll-cue {
+    display: none;
+  }
+
+  .issue-tag {
+    font-size: 10px;
+  }
+
   .index-section {
     padding: 100px 0 20px;
   }
@@ -1478,38 +1531,60 @@ button {
   }
 
   .spread {
-    padding: 118px 0 40px;
-    min-height: auto;
+    padding-top: 70px;
+    min-height: 100vh;
   }
 
   .spread-grid {
-    padding: 0 20px;
-  }
-
-  .spread-copy h1 {
-    font-size: clamp(34px, 10vw, 46px);
-  }
-
-  .spread-copy p {
-    font-size: 16px;
-  }
-
-  .spread-controls {
-    padding: 0 20px;
-    flex-wrap: wrap;
-  }
-
-  .scroll-cue {
-    display: none;
-  }
-
-  .btn {
-    padding: 14px 24px;
-    font-size: 14px;
+    padding: 10px 16px 80px;
+    min-height: calc(100vh - 70px);
+    gap: 16px;
   }
 
   .spread-blob {
-    width: clamp(160px, 60vw, 260px);
+    width: clamp(140px, 55vw, 200px);
+    margin: 0 auto 16px;
+  }
+
+  .spread-copy h1 {
+    font-size: clamp(24px, 9vw, 32px);
+    margin: 10px 0 12px;
+  }
+
+  .spread-copy p {
+    font-size: 14px;
+    margin: 0 auto 20px;
+    line-height: 1.5;
+  }
+
+  .spread-controls {
+    padding: 0 16px 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .folio {
+    gap: 10px;
+  }
+
+  .folio-arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .folio-count {
+    font-size: 12px;
+  }
+
+  .spread-rail {
+    min-width: 60px;
+    flex: 1;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 13px;
   }
 
   .badge-row {
